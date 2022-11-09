@@ -1,0 +1,11 @@
+.about {
+    background-color: #181717;
+    color: #fff;
+    /* border: 1px solid red; */
+}
+.about > div:first-child {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}

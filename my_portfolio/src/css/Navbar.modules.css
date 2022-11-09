@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    padding: 0 60px;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navbar > div:first-child {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    display: grid;
+    place-content: center;
+}
+.navbar > div:nth-child(2) {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h4, .navbar span {
+    cursor: pointer;
+}
+.navbar h4:hover {
+    color: orange;
+}
