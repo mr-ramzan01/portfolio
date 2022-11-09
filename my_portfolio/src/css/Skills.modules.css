@@ -2,3 +2,15 @@
     background-color: #181717;
     color: #fff;
 }
+
+.skills > div {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    border: 1px solid red;
+    grid-template-columns: repeat(3,1fr);
+}
+.skills img {
+    border: 1px solid blue;
+    width: 100px;
+}
