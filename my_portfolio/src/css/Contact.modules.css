@@ -1,0 +1,21 @@
+.contactDiv {
+    border: 1px solid red;
+    margin: 30px 0;
+}
+.contactHeading {
+    text-align: center;
+}
+.contactDiv > div {
+    border: 1px solid blue;
+    width: 30%;
+    margin: auto;
+}
+.contactForm {
+    border: 1px solid green;
+}
+.contactForm input {
+    width: 100%;
+}
+.contactForm textarea {
+    width: 100%;
+}

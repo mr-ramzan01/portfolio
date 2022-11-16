@@ -1,9 +1,14 @@
 .skills {
-    background-color: #181717;
-    color: #fff;
+    /* background-color: #181717;
+    color: #fff; */
+    /* margin-top: 500px; */
+    border: 1px solid orange;
+}
+.skills h1 {
+    
 }
 
-.skills > div {
+.skills > div:nth-child(2) {
     width: 50%;
     margin: auto;
     display: grid;

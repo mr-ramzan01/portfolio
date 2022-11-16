@@ -1,19 +1,29 @@
+
 .navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+}
+.navbar > div {
+    z-index: 10;
     display: flex;
     padding: 0 60px;
     justify-content: space-between;
-    background-color: #000000;
-    color: #fff;
+    /* background-color: #000000;
+    color: #fff; */
     height: 70px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* position: fixed; */
+    /* width: 100%; */
 }
-.navbar > div:first-child {
+.navbar > div> div:first-child {
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     display: grid;
     place-content: center;
 }
-.navbar > div:nth-child(2) {
+.navbar >div> div:nth-child(2) {
     display: flex;
     width: 50%;
     justify-content: space-between;
@@ -23,5 +33,5 @@
     cursor: pointer;
 }
 .navbar h4:hover {
-    color: orange;
+    color: #777676;
 }
