@@ -1,8 +1,6 @@
 .about {
     background-color: #eee;
     color: black;
-    /* border: 1px solid red; */
-    /* background-image: url('../../public/Images/porfolioImages.jpg'); */
 }
 .about > div:first-child {
     display: flex;
@@ -11,24 +9,18 @@
     margin: auto;
     padding: 60px 0 30px 0;
     justify-content: space-between;
-    /* border: 1px solid blue; */
 }
 .about > div:first-child >div {
     width: 100%;
 }
 
 .profile {
-    /* border: 1px solid red; */
-    /* height: 300px; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
-    /* background-color: black; */
 }
 .profile img {
-    border: 1px solid black;
     margin-top: 30px;
     width: 370px;
     height: 370px;
@@ -37,7 +29,6 @@
 }
 
 .download {
-    /* border: 1px solid red; */
     width: 70%;
     margin: auto;
     padding: 0 0 30px 0;

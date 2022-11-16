@@ -1,21 +1,70 @@
 .contactDiv {
-    border: 1px solid red;
-    margin: 30px 0;
+    /* border: 1px solid red; */
+    background-color: #eee;
+    padding: 30px 0 60px 0;
 }
-.contactHeading {
+.contactHeading h1 {
     text-align: center;
+    font-size: 40px;
+    font-weight: 300;
 }
 .contactDiv > div {
-    border: 1px solid blue;
-    width: 30%;
+    /* border: 1px solid blue; */
+    width: 80%;
     margin: auto;
 }
 .contactForm {
-    border: 1px solid green;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.contactDiv label {
+    font-size: 20px;
 }
 .contactForm input {
-    width: 100%;
+    width: 50%;
+    margin: 10px 0;
+    height: 30px;
+    padding: 0 10px;
+    outline: none;
+}
+.contactForm input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 .contactForm textarea {
-    width: 100%;
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+.submit {
+    border: 1px solid violet;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 20%;
+    border: none;
+    border-radius: 3px;
+    background-color: #6b6a6a;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.capitalC {
+    font-size: 60px;
+    font-weight: 200;
+}
+.redStar {
+    color: red;
+}
+.footer {
+    color: #fff;
+    background-color: #6b6a6a;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

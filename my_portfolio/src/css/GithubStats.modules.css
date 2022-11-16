@@ -1,3 +1,34 @@
 .githubStats {
     /* background-color: black; */
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+}
+.githubStats h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.streak {
+    width: 80vw;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.language, .graph {
+    width: 80vw;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph img {
+    width: 100%;
+}
+
+.capitalG {
+    font-size: 60px;
+    font-weight: 200;
 }

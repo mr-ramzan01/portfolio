@@ -37,7 +37,7 @@
     padding: 0 2rem 2rem 2rem;
 }
 .details h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 400;
 }
 .details h2 {
@@ -52,7 +52,7 @@
 .capitalP {
     letter-spacing: -3px;
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .links {

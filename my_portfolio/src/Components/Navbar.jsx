@@ -10,6 +10,7 @@ export const Navbar = () => {
             <h4>About</h4>
             <h4>Skills</h4>
             <h4>Projects</h4>
+            <h4>Stats</h4>
             <h4>Contact</h4>
             <span className="material-symbols-outlined">light_mode</span>
             {/* <span className="material-symbols-outlined">dark_mode</span> */}

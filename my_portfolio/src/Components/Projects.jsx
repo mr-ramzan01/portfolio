@@ -38,7 +38,7 @@ export const Projects = () => {
                 <h3>A collaborative project built by a team of 5 members in 5 days</h3>
               </div>
               <div className='links'>
-                <a href="https://clinquant-dolphin-aebed7.netlify.app" target="_blank"><button>Live</button></a>
+                <a href="https://clinquant-dolphin-aebed7.netlify.app" target="_blank"><button>View</button></a>
                 <a href="https://github.com/mr-ramzan01/UnbounceProject" target="_blank"><i class="fa-brands fa-github" ></i></a>
               </div>
             </div>
@@ -56,7 +56,7 @@ export const Projects = () => {
                 <h3>A collaborative project built by a team of 5 members in 6 days</h3>
               </div>
               <div className='links'>
-                <a href="https://pluralsightclonee.netlify.app" target="_blank"><button>Live</button></a>
+                <a href="https://pluralsightclonee.netlify.app" target="_blank"><button>View</button></a>
                 <a href="https://github.com/Akshaypareek01/pluralsight" target="_blank"><i class="fa-brands fa-github" ></i></a>
               </div>
             </div>
