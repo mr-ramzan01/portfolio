@@ -41,30 +41,42 @@ export const Skills = () => {
     },
     {
       id: 10,
-      image: 'Images/chakra.png'
+      image: "Images/mongoose.png"
     },
     {
       id: 11,
-      image: 'Images/npm.svg'
+      image: 'Images/chakra.png'
     },
     {
       id: 12,
-      image: 'Images/git.svg'
+      image: 'Images/npm.svg'
     },
     {
       id: 13,
+      image: 'Images/git.svg'
+    },
+    {
+      id: 14,
       image: 'Images/postman.png'
+    },
+    {
+      id: 15,
+      image: 'Images/heroku.png'
+    },
+    {
+      id: 16,
+      image: 'Images/netlify.png'
     }
   ]
   return (
     <div className='skills'>
       <div>
-        <h1>Skills</h1>
+        <h1><span className='capitalS'>S</span>kills</h1>
       </div>
       <div>
         {
           images.map(el => (
-            <div key={el.id}>
+            <div className='imageDiv' key={el.id}>
               <img src={process.env.PUBLIC_URL+`${el.image}`} alt="" />
             </div>
           ))

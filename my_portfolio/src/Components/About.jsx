@@ -11,7 +11,7 @@ export const About = () => {
           <p>Strong in design and integration with intuitive problem-solving skills. A perfervid Full Stack Developer , eager to learn new skills.  Looking to start the career as an entry-level software engineer with a reputed firm to grow and show skills.</p>
         </div>
         <div className='profile'>
-          <img src={process.env.PUBLIC_URL+`/Images/profileImage.png`} alt="" />
+          <img src={process.env.PUBLIC_URL+`/Images/portfolioProfile.png`} alt="" />
         </div>
       </div>
       <div>

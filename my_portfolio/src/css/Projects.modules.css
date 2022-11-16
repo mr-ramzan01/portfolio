@@ -1,18 +1,76 @@
 .projects {
-    /* background-color: #181717; */
+    background-color: #eee;
     /* color: #fff; */
-    font-family: Nunito, sans-serif;
-    border: 1px solid red;
+    /* margin-top: 400px; */
+    /* width: 100%; */
+    padding: 50px 0;
+    margin: 50px 0;
+    /* border: 1px solid red; */
+}
+.projects> div> h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
 }
 .project img {
     width: 100%;
     height: 100%;
+    border-radius: 10px 0 0 10px;
 }
 .project {
-    border: 1px solid orange;
-    display: flex;
-    gap: 30px;
+    width: 85%;
+    margin: auto;
 }
-.project > div {
-    width: 100%;
+.project> div {
+    border: 1px solid #6b6a6a;
+    border-radius: 10px;
+    display: flex;
+    /* gap: 30px; */
+    margin: 20px;
+    /* width: 100%; */
+}
+.details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem 2rem 2rem;
+}
+.details h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.details h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+.details h3 {
+    color: #6b6a6a;
+    font-size: 15px;
+    font-weight: 500;
+}
+.capitalP {
+    letter-spacing: -3px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links i {
+    font-size: 40px;
+    color: #6b6a6a;
+}
+.links button {
+    background-color: #6b6a6a;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 2px;
+    padding: 10px 20px;
+    /* margin-top: 20px; */
+    cursor: pointer;
 }
