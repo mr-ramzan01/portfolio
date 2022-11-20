@@ -3,6 +3,8 @@ import '../css/GithubStats.modules.css'
 
 export const GithubStats = () => {
   return (
+    <>
+    <div  id='stats' style={{ height: "50px"}}></div>
     <div className='githubStats'>
       <div>
         <h1><span className='capitalG'>G</span>ithub Stats</h1>
@@ -18,5 +20,6 @@ export const GithubStats = () => {
           <img src="https://activity-graph.herokuapp.com/graph?username=mr-ramzan01" alt="" />
         </div>
     </div>
+    </>
   )
 }

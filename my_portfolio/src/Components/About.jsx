@@ -3,7 +3,7 @@ import '../css/About.modules.css'
 
 export const About = () => {
   return (
-    <div className='about'>
+    <div id='about' className='about'>
       <div>
         <div>
           <h1>Hi, I am Ramzan</h1>
@@ -17,13 +17,13 @@ export const About = () => {
       <div>
         <div className='download'>
           <div>
-            <a href="https://www.linkedin.com/in/ramzan-khan-263b87230/" target={"_blank"}><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/mr-ramzan01" target={"_blank"}><i class="fa-brands fa-github" ></i></a>
-            <a href="mailto: ramzanformasai03@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tel: 9958949641"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://www.linkedin.com/in/ramzan-khan-263b87230/" target={"_blank"}><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/mr-ramzan01" target={"_blank"}><i className="fa-brands fa-github" ></i></a>
+            <a href="mailto: ramzanformasai03@gmail.com"><i className="fa-solid fa-envelope"></i></a>
+            <a href="tel: 9958949641"><i className="fa-solid fa-phone"></i></a>
           </div>
           <div className='resume'>
-            <a href="https://drive.google.com/file/d/1MZMmZb8P9R3ou2WOHKiNV6r8BU2dHub6/view?usp=share_link" target={"_blank"}><button>Resume <i class="fa-solid fa-eye"></i></button></a>
+            <a href="https://drive.google.com/file/d/1MZMmZb8P9R3ou2WOHKiNV6r8BU2dHub6/view?usp=share_link" target={"_blank"}><button>Resume <i className="fa-solid fa-eye"></i></button></a>
           </div>
         </div>
       </div>

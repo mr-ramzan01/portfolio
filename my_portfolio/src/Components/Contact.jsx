@@ -3,7 +3,7 @@ import '../css/Contact.modules.css'
 
 export const Contact = () => {
   return (
-    <>
+    <div id='contact'>
     <div className='contactDiv'>
       <div className='contactHeading'>
         <h1><span className='capitalC'>C</span>ontact Me</h1>
@@ -25,6 +25,6 @@ export const Contact = () => {
     <div className='footer'>
       Designed and build from Scratch with ❤️ by Ramzan Khan
     </div>
-    </>
+    </div>
   )
 }

@@ -1,7 +1,7 @@
 
 .navbar {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
     z-index: 5;
 }
@@ -29,9 +29,15 @@
     justify-content: space-between;
     align-items: center;
 }
-.navbar h4, .navbar span {
+.navbar h4 a {
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.navbar span {
     cursor: pointer;
 }
-.navbar h4:hover {
+.navbar h4 a:hover {
     color: #777676;
 }

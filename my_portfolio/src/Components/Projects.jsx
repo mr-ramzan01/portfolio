@@ -3,7 +3,7 @@ import '../css/Projects.modules.css'
 
 export const Projects = () => {
   return (
-    <div className='projects'>
+    <div id='projects' className='projects'>
       <div>
         <h1><span className='capitalP'>P</span>rojects</h1>
       </div>
@@ -21,7 +21,7 @@ export const Projects = () => {
               </div>
               <div className='links'>
                 <a href="https://teamnetlifyclone.netlify.app/" target="_blank"><button>View</button></a>
-                <a href="https://github.com/nidhishpareek/NetMeds-Clone" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://github.com/nidhishpareek/NetMeds-Clone" target="_blank"><i className="fa-brands fa-github" ></i></a>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ export const Projects = () => {
               </div>
               <div className='links'>
                 <a href="https://clinquant-dolphin-aebed7.netlify.app" target="_blank"><button>View</button></a>
-                <a href="https://github.com/mr-ramzan01/UnbounceProject" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://github.com/mr-ramzan01/UnbounceProject" target="_blank"><i className="fa-brands fa-github" ></i></a>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export const Projects = () => {
               </div>
               <div className='links'>
                 <a href="https://pluralsightclonee.netlify.app" target="_blank"><button>View</button></a>
-                <a href="https://github.com/Akshaypareek01/pluralsight" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://github.com/Akshaypareek01/pluralsight" target="_blank"><i className="fa-brands fa-github" ></i></a>
               </div>
             </div>
           </div>

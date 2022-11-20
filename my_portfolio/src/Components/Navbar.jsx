@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRef } from 'react'
 import '../css/Navbar.modules.css'
 export const Navbar = () => {
   return (
@@ -6,12 +7,11 @@ export const Navbar = () => {
       <div>
         <div><h2>Ramzan</h2></div>
           <div className='navbox'>
-            <h4>Home</h4>
-            <h4>About</h4>
-            <h4>Skills</h4>
-            <h4>Projects</h4>
-            <h4>Stats</h4>
-            <h4>Contact</h4>
+            <h4><a href="#about">About</a></h4>
+            <h4><a href="#skills">Skills</a></h4>
+            <h4><a href="#projects">Projects</a></h4>
+            <h4><a href="#stats">Stats</a></h4>
+            <h4><a href="#contact">Contact</a></h4>
             <span className="material-symbols-outlined">light_mode</span>
             {/* <span className="material-symbols-outlined">dark_mode</span> */}
           </div>
