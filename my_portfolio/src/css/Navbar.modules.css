@@ -4,24 +4,64 @@
     width: 100vw;
     background-color: #fff;
     z-index: 5;
+    /* background-color: #000; */
+    /* color: #fff; */
 }
 .navbar > div {
     z-index: 10;
     display: flex;
     padding: 0 60px;
     justify-content: space-between;
-    /* background-color: #000000;
-    color: #fff; */
     height: 70px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* position: fixed; */
-    /* width: 100%; */
 }
-.navbar > div> div:first-child {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+.navbar > div > div:first-child {
+    /* border: 1px solid red; */
     display: grid;
     place-content: center;
+}
+.logo h2{
+    font-family:Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 35px;
+}
+.logo h2 {
+    font-weight: 500;
+}
+.logo h2:nth-child(2) {
+    margin-top: -70px;
+    color: rgb(174, 174, 174);
+    animation: anm 3s ease-in-out infinite;
+}
+@keyframes anm {
+    0%,
+ 100% {
+    clip-path: polygon(
+        0% 0%,
+        14% 0,
+        27% 14%,
+        40% 26%,
+        53% 38%,
+        67% 48%,
+        80% 51%,
+        100% 49%,
+        100% 99%,
+        0% 99%
+    );
+}
+50% {
+    clip-path: polygon(
+        0% 59%,
+        14% 54%,
+        30% 53%,
+        45% 56%,
+        57% 46%,
+        66% 31%,
+        78% 17%,
+        100% 0%,
+        100% 99%,
+        0% 99%
+    );
+}
 }
 .navbar >div> div:nth-child(2) {
     display: flex;
@@ -39,5 +79,7 @@
     cursor: pointer;
 }
 .navbar h4 a:hover {
-    color: #777676;
+    /* color: #777676; */
+    color: 'red'
 }
+
