@@ -1,9 +1,24 @@
 import React from 'react'
+import { useContext } from 'react'
+import { ThemeContext } from '../Context/ThemeContext'
 import '../css/About.modules.css'
 
 export const About = () => {
+  const {theme} = useContext(ThemeContext);
+  console.log(theme);
+  const styles = {
+    default: {
+      color: "black",
+      backgroundColor: "#eee"
+    },
+    dark: {
+      color: "white",
+      backgroundColor: "#292929"
+    }
+  }
+
   return (
-    <div id='about' className='about'>
+    <div id='about' className='about' style={theme? styles.dark: styles.default}>
       <div>
         <div>
           <h1>Hi, I am Ramzan</h1>

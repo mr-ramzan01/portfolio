@@ -4,7 +4,6 @@ import '../css/Navbar.modules.css'
 export const Navbar = () => {
 
   const {theme, handleTheme} = useContext(ThemeContext);
-  console.log(theme);
 
   const styles = {
     default: {
@@ -16,7 +15,6 @@ export const Navbar = () => {
       backgroundColor: "black"
     }
   }
-  // styles={theme? style.dark: style.default}
   return (
     <div className='navbar' style={theme? styles.dark: styles.default} >
       <div>
@@ -29,7 +27,7 @@ export const Navbar = () => {
             <h4><a href="#contact" style={theme? styles.dark: styles.default}>Contact</a></h4>
             <div onClick={handleTheme}>
               {
-                theme ? <span className="material-symbols-outlined" style={{color: "Orange"}}>light_mode</span> : <span className="material-symbols-outlined">dark_mode</span>
+                theme ? <span className="material-symbols-outlined" style={{color: "#fff"}}>light_mode</span> : <span className="material-symbols-outlined">dark_mode</span>
               }
             </div>
           </div>

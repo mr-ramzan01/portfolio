@@ -1,9 +1,12 @@
 import React from 'react'
+import { useContext } from 'react'
+import { ThemeContext } from '../Context/ThemeContext'
 import '../css/Projects.modules.css'
 
 export const Projects = () => {
+  const {theme} = useContext(ThemeContext);
   return (
-    <div id='projects' className='projects'>
+    <div id='projects' className='projects' style={theme?{backgroundColor: "#292929", color: "#fff"}: {backgroundColor: "#eee"}}>
       <div>
         <h1><span className='capitalP'>P</span>rojects</h1>
       </div>

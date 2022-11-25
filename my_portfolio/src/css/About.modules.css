@@ -1,5 +1,5 @@
 .about {
-    background-color: #eee;
+    background-color: rgb(34, 33, 33);
     color: black;
 }
 .about > div:first-child {

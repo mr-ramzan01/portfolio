@@ -1,7 +1,10 @@
 import React from 'react'
+import { useContext } from 'react'
+import { ThemeContext } from '../Context/ThemeContext'
 import '../css/Skills.modules.css'
 
 export const Skills = () => {
+  const {theme} = useContext(ThemeContext);
   let images = [
     {
       id: 1,
@@ -69,7 +72,7 @@ export const Skills = () => {
     }
   ]
   return (
-    <div id='skills' className='skills'>
+    <div id='skills' className='skills' style={theme?{backgroundColor: "black", color: "#fff"}: {backgroundColor: "#fff"}}>
       <div>
         <h1><span className='capitalS'>S</span>kills</h1>
       </div>
