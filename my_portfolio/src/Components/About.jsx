@@ -32,7 +32,7 @@ export const About = () => {
       <div>
         <div className='download'>
           <div>
-            <a href="https://www.linkedin.com/in/ramzan-khan-263b87230/" target={"_blank"}><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/ramzan01/" target={"_blank"}><i className="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/mr-ramzan01" target={"_blank"}><i className="fa-brands fa-github" ></i></a>
             <a href="mailto: ramzanformasai03@gmail.com"><i className="fa-solid fa-envelope"></i></a>
             <a href="tel: 9958949641"><i className="fa-solid fa-phone"></i></a>
