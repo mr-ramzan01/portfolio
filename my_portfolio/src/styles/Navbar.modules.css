@@ -4,8 +4,6 @@
     width: 100vw;
     background-color: #fff;
     z-index: 5;
-    /* background-color: #000; */
-    /* color: #fff; */
 }
 .navbar > div {
     z-index: 10;
@@ -16,19 +14,18 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .navbar > div > div:first-child {
-    /* border: 1px solid red; */
     display: grid;
     place-content: center;
 }
 .logo h2{
-    font-family:Arial, Helvetica, sans-serif, sans-serif;
-    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
 }
 .logo h2 {
     font-weight: 500;
 }
 .logo h2:nth-child(2) {
-    margin-top: -70px;
+    margin-top: -80px;
     color: rgb(174, 174, 174);
     animation: anm 3s ease-in-out infinite;
 }
@@ -50,14 +47,14 @@
 }
 50% {
     clip-path: polygon(
-        0% 59%,
+        0% 89%,
         14% 54%,
         30% 53%,
-        45% 56%,
-        57% 46%,
+        45% 76%,
+        57% 86%,
         66% 31%,
         78% 17%,
-        100% 0%,
+        100% 100%,
         100% 99%,
         0% 99%
     );
@@ -69,17 +66,32 @@
     justify-content: space-between;
     align-items: center;
 }
-.navbar h4 a {
+.link {
     cursor: pointer;
+    position: relative;
     color: #000000;
+    font-family: 'Dancing Script', cursive;
     text-decoration: none;
     scroll-behavior: smooth;
+    font-size:  22px;
+    padding-bottom: 10px;
+}
+.link::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #6b6a6a;
+    transition: width 0.6s ease-out;
+}
+.link:hover.link::after {
+    width: 100%;
+
 }
 .navbar span {
     cursor: pointer;
 }
-.navbar h4 a:hover {
-    /* color: #777676; */
-    color: 'red'
-}
+
 

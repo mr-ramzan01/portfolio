@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from '../Context/ThemeContext'
-import '../css/GithubStats.modules.css'
+import '../styles/GithubStats.modules.css'
 
 export const GithubStats = () => {
   const {theme} = useContext(ThemeContext);
@@ -20,7 +20,7 @@ export const GithubStats = () => {
           {theme?<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-ramzan01&layout=compact&theme=radical&border_radius=10" alt="" />:<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-ramzan01&layout=compact&border_radius=10" alt="" />}
         </div>
         <div className='graph'>
-          <img src="https://activity-graph.herokuapp.com/graph?username=mr-ramzan01" alt="" />
+          {/* <img src="https://activity-graph.herokuapp.com/graph?username=mr-ramzan01" alt="" /> */}
           {/* {theme?<img src="https://activity-graph.herokuapp.com/graph?username=mr-ramzan01&theme=react-dark" alt="" />:<img src="https://activity-graph.herokuapp.com/graph?username=mr-ramzan01" alt="" />} */}
         </div>
     </div>

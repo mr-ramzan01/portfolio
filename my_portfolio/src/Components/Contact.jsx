@@ -1,8 +1,7 @@
 import React, { useContext, useRef } from 'react'
 import { ThemeContext } from '../Context/ThemeContext'
-import '../css/Contact.modules.css'
+import '../styles/Contact.modules.css'
 import emailjs from '@emailjs/browser'
-console.log(emailjs,"@emailjs/browser")
 
 export const Contact = () => {
   const {theme} = useContext(ThemeContext);
@@ -16,7 +15,6 @@ export const Contact = () => {
           form.current.email_id.value=null;
           form.current.mobile_no.value=null;
           form.current.message.value=null;
-          console.log(result.text);
       }, (error) => {
         alert('Something went wrong');
           console.log(error.text);

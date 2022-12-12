@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from '../Context/ThemeContext'
-import '../css/Skills.modules.css'
+import '../styles/Skills.modules.css'
 
 export const Skills = () => {
   const {theme} = useContext(ThemeContext);
