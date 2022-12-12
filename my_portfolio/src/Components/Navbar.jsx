@@ -23,7 +23,7 @@ export const Navbar = () => {
             <h4><a className='link' href="#about" style={theme? styles.dark: styles.default}>About</a></h4>
             <h4><a className='link' href="#skills" style={theme? styles.dark: styles.default}>Skills</a></h4>
             <h4><a className='link' href="#projects" style={theme? styles.dark: styles.default}>Projects</a></h4>
-            {/* <h4><a className='link' href="#stats" style={theme? styles.dark: styles.default}>Stats</a></h4> */}
+            <h4><a className='link' href="#stats" style={theme? styles.dark: styles.default}>Stats</a></h4>
             <h4><a className='link' href="#contact" style={theme? styles.dark: styles.default}>Contact</a></h4>
             <div onClick={handleTheme}>
               {

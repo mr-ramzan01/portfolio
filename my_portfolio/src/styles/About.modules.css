@@ -2,40 +2,126 @@
     background-color: rgb(34, 33, 33);
     color: black;
 }
-.about > div:first-child {
+.about > div {
     display: flex;
     gap: 20px;
     width: 70%;
     margin: auto;
-    padding: 60px 0 30px 0;
+    padding: 30px 0 40px 0;
     justify-content: space-between;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.about_firstChild {
+    width: 50%;
+}
+.about_firstChild img{
+    width: 50px;
+    height: 50px;
+}
+.about_firstChild h1 {
+    font-size: 30px;
+}
+.animate_txt {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    border: 1px solid blue;
+    display: inline-flex;
+}
+.wrapper .static_txt {
+    font-size: 25px;
+    font-weight: 400;
+}
+.wrapper .dynamic_txt {
+    /* margin-left: 15px; */
+    height: 90px;
+    line-height: 90px;
+    /* overflow: hidden; */
+}
+/* .dynamic_txt {
+    width: 100%;
+} */
+.dynamic_txt li {
+    border: 1px solid red;
+    margin-left: -20px;
+    margin-top: -20px;
+    color: #0033ff;
+    list-style: none;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+.dynamic_txt li span {
+    position: relative;
+}
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic_txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border-left: 2px solid #0033ff;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        /* margin: 0 -35px 0 35px; */
+    }
+}
+
+
+.about_firstChild p {
+    font-size: 20px;
 }
 .about > div:first-child >div {
     width: 100%;
 }
 
 .profile {
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.profile img {
-    margin-top: 30px;
+.profile > div {
+    border: 5px solid #fff;
+    box-sizing: border-box;
     width: 370px;
     height: 370px;
     border-radius: 50%;
+    overflow: hidden;
+    transform: translateY(0px);
+    animation: float 3s ease-in-out infinite;
+}
+.profile img {
+    display: block;
+    width: 100%;
+    height: auto;
     object-fit: cover;
+    /* border-radius: 50%; */
 }
 
 .download {
-    width: 70%;
-    margin: auto;
-    padding: 0 0 30px 0;
+    margin-top: 50px;
 }
 .download a {
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: 15px;
+    font-size: 25px;
     color: #6b6a6a;
 }
 
@@ -44,7 +130,19 @@
     color: #fff;
     border: none;
     border-radius: 2px;
-    padding: 10px 20px;
+    padding: 12px 35px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
