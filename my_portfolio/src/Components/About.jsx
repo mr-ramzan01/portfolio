@@ -21,18 +21,16 @@ export const About = () => {
       <div>
         <div className='about_firstChild'>
           <h1>Hi, <span><img src="/Images/hi_robot.gif" alt="" /></span> Myself Ramzan</h1>
-          {/* <div className='animate_txt'>
+          <div className='animate_txt'>
             <div className='wrapper'>
               <div className="static_txt">I'm a</div>
               <ul className='dynamic_txt'>
-                <li><span>Youtuber</span></li>
                 <li><span>Developer</span></li>
                 <li><span>Designer</span></li>
-                <li><span>Freelancer</span></li>
               </ul>
             </div>
-          </div> */}
-          <h2>I'm a Full Stack Developer</h2>
+          </div>
+          {/* <h2>I'm a Full Stack Developer</h2> */}
           <p>Strong in design with intuitive problem-solving skills. A passionate Full Stack Developer , skilled in MERN technologies and always eager to learn new skills.  Looking to start the career as an entry-level software engineer with a reputed firm to grow and show skills.</p>
           <div className='download'>
             <div>
@@ -42,7 +40,7 @@ export const About = () => {
               <a href="tel: 9958949641"><i className="fa-solid fa-phone"></i></a>
             </div>
             <div className='resume'>
-              <a href="https://drive.google.com/file/d/1MZMmZb8P9R3ou2WOHKiNV6r8BU2dHub6/view?usp=share_link" target={"_blank"}><button>Resume <i className="fa-solid fa-eye"></i></button></a>
+              <a href="https://drive.google.com/file/d/1TLn9o7L3Lt-CHDUcaPUpIA6K6cosBXhE/view?usp=share_link" target={"_blank"}><button>Resume <i className="fa-solid fa-eye"></i></button></a>
             </div>
           </div>
         </div>

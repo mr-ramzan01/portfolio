@@ -4,71 +4,29 @@ import { ThemeContext } from '../Context/ThemeContext'
 import '../styles/Skills.modules.css'
 
 export const Skills = () => {
+  let count = 1;
   const {theme} = useContext(ThemeContext);
   let images = [
     {
       id: 1,
-      image: '/Images/html.svg'
+      image: [{name: 'HTML', src:'/Images/html.svg'}]
     },
     {
       id: 2,
-      image: 'Images/css.svg'
+      image: [{ name: 'CSS', src: 'Images/css.svg'},{ name: 'JAVASCRIPT', src: 'Images/javaScript.svg'}]
+
     },
     {
       id: 3,
-      image: 'Images/javaScript.svg'
+      image: [{ name: 'JAVA', src: 'Images/java.png'}, { name: 'REACT', src: 'Images/react.svg'}, { name: 'REDUX', src: 'Images/redux.svg'}]
     },
     {
       id: 4,
-      image: 'Images/java.png'
+      image: [{ name: 'NODEJS', src: 'Images/nodeJs.svg'}, { name: 'EXPRESS', src: 'Images/express.svg'}, { name: 'MONGODB', src: 'Images/mongoDB.svg'}, { name: 'MONGOOSE', src: 'Images/mongoose.png'}]
     },
     {
       id: 5,
-      image: 'Images/react.svg'
-    },
-    {
-      id: 6,
-      image: 'Images/redux.svg'
-    },
-    {
-      id: 7,
-      image: 'Images/nodeJs.svg'
-    },
-    {
-      id: 8,
-      image: 'Images/express.svg'
-    },
-    {
-      id: 9,
-      image: 'Images/mongoDB.svg'
-    },
-    {
-      id: 10,
-      image: "Images/mongoose.png"
-    },
-    {
-      id: 11,
-      image: 'Images/chakra.png'
-    },
-    {
-      id: 12,
-      image: 'Images/npm.svg'
-    },
-    {
-      id: 13,
-      image: 'Images/git.svg'
-    },
-    {
-      id: 14,
-      image: 'Images/postman.png'
-    },
-    {
-      id: 15,
-      image: 'Images/heroku.png'
-    },
-    {
-      id: 16,
-      image: 'Images/netlify.png'
+      image: [{ name: 'CHAKRA UI', src: 'Images/chakra.png'}, { name: 'NPM', src: 'Images/npm.svg'}, { name: 'GIT', src: 'Images/git.svg'}, { name: 'HEROKU', src: 'Images/heroku.png'}, { name: 'NETLIFY', src: 'Images/netlify.png'}]
     }
   ]
   return (
@@ -76,11 +34,18 @@ export const Skills = () => {
       <div>
         <h1><span className='capitalS'>S</span>kills</h1>
       </div>
-      <div>
+      <div className='images_div'>
         {
           images.map(el => (
             <div className='imageDiv' key={el.id}>
-              <img src={process.env.PUBLIC_URL+`${el.image}`} alt="" />
+              {el.image.map((e) => (
+                <div className='flip_card'>
+                  <div className='flip_card_inner'>
+                    <div className='front_face'><img className={`bounce${count++}`} src={process.env.PUBLIC_URL+`${e.src}`} alt="" /></div>
+                    <div className='back_face'><p>{e.name}</p></div>
+                  </div>
+                </div>
+              ))}
             </div>
           ))
         }

@@ -12,13 +12,13 @@ export const Navbar = () => {
     },
     dark: {
       color: "white",
-      backgroundColor: "black"
+      backgroundColor: "#1e272e"
     }
   }
   return (
     <div className='navbar' style={theme? styles.dark: styles.default} >
       <div>
-        <div><div className='logo'><h2>Ramzan Khan</h2><h2>Ramzan Khan</h2></div></div>
+        <div><div className='logo'><h2>Ramzan Khan</h2><h2 style={theme?{color: 'rgb(100, 100, 100)'}: {color: 'blue'}}>Ramzan Khan</h2></div></div>
           <div className='navbox'>
             <h4><a className='link' href="#about" style={theme? styles.dark: styles.default}>About</a></h4>
             <h4><a className='link' href="#skills" style={theme? styles.dark: styles.default}>Skills</a></h4>
