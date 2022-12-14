@@ -22,75 +22,16 @@
 .about_firstChild h1 {
     font-size: 30px;
 }
-.animate_txt {
+.animate_type {
     /* border: 1px solid red; */
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    font-size: 30px;
 }
-.wrapper {
-    /* border: 1px solid blue; */
-    height: 30px;
-    display: inline-flex;
-}
-.wrapper .static_txt {
-    font-size: 25px;
-    font-weight: 400;
-}
-.wrapper .dynamic_txt {
+.animate_type > div:nth-child(2) {
     /* border: 1px solid red; */
-    /* margin-left: 15px; */
-    height: 35px;
-    line-height: 70px;
-    overflow: hidden;
-}
-.dynamic_txt {
-    /* width: 100%; */
-    margin: auto;
-}
-.dynamic_txt li {
-    /* border: 1px solid olive; */
-    margin-left: -28px;
-    margin-top: -20px;
+    margin-left: 10px;
     color: #0033ff;
-    list-style: none;
-    font-size: 25px;
-    font-weight: 600;
-    position: relative;
-    top: 0;
-    /* display: flex;
-    text-align: center;
-    align-items: center; */
-    animation: slide 6s steps(2) infinite;
 }
-.dynamic_txt li span {
-    position: relative;
-}
-@keyframes slide {
-    100% {
-        top: -100px;
-    }
-}
-
-.dynamic_txt li span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #eee;
-    border-left: 2px solid #0033ff;
-    animation: typing 3s steps(9) infinite;
-}
-
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 -10px 0 10px;
-    }
-}
-
 
 .about_firstChild p {
     font-size: 20px;
@@ -100,6 +41,7 @@
 }
 
 .profile {
+    /* border: 1px solid red; */
     width: 50%;
     display: flex;
     align-items: center;
@@ -110,7 +52,7 @@
     box-sizing: border-box;
     width: 370px;
     height: 370px;
-    border-radius: 50%;
+    border-radius: 50px;
     overflow: hidden;
     transform: translateY(0px);
     animation: float 3s ease-in-out infinite;
@@ -120,7 +62,6 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    /* border-radius: 50%; */
 }
 
 .download {
@@ -131,10 +72,7 @@
     font-size: 25px;
     color: #6b6a6a;
 }
-/* .download a:hover {
-    border: 1px solid red;
-    transform: scale(2);
-} */
+
 
 .resume button {
     background-color: #6b6a6a;

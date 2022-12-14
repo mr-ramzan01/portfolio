@@ -1,76 +1,173 @@
 .projects {
+    /* border: 1px solid red; */
     background-color: #eee;
+    position: relative;
+    /* overflow: hidden; */
     /* color: #fff; */
     /* margin-top: 400px; */
     /* width: 100%; */
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
+    font-family: 'Patrick Hand', cursive;
     /* margin: 50px 0; */
     /* border: 1px solid red; */
 }
-.projects> div> h1 {
+.wave_1 {
+    position: absolute;
+    /* border: 1px solid red; */
+    /* right: 90vw; */
+    bottom: 0;
+    /* border: 1px solid red; */
+    /* background-size: 1000px 100px; */
+    /* animation: floatWave1 10s linear infinite; */
+}
+.wave_2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* width: 100%;
+    width: 100%;
+    height: 50%; */
+    /* border: 1px solid red; */
+    animation: floatWave2 7s ease-in-out;
+    /* animation-delay: 10s; */
+}
+@keyframes floatWave1 {
+    0% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes floatWave2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+.project_heading {
+    /* border: 1px solid red; */
     text-align: center;
     font-size: 40px;
     font-weight: 300;
 }
-.project img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 0 0 10px;
-}
-.project {
-    width: 85%;
-    margin: auto;
-}
-.project> div {
-    border: 1px solid #6b6a6a;
-    border-radius: 10px;
-    display: flex;
-    /* gap: 30px; */
-    margin: 20px;
-    /* width: 100%; */
-}
-.details {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 2rem 2rem 2rem;
-}
-.details h1 {
-    font-size: 40px;
-    font-weight: 400;
-}
-.details h2 {
-    font-size: 15px;
-    font-weight: 400;
-}
-.details h3 {
-    color: #6b6a6a;
-    font-size: 15px;
-    font-weight: 500;
-}
 .capitalP {
     letter-spacing: -3px;
     font-size: 60px;
-    font-weight: 200;
+}
+.projects_div {
+    /* border: 1px solid blueviolet; */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    /* gap: 20px; */
+    grid-template-columns: repeat(2, 1fr);
+}
+.project {
+    /* border: 1px solid blue; */
+    padding: 20px;
+    z-index: 5;
+    /* width: 85%;
+    margin: auto; */
+}
+.project> div {
+    /* border: 1px solid #6b6a6a; */
+    position: relative;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation: float 3s ease-in-out infinite;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    /* gap: 30px; */
+    /* margin: 20px; */
+    /* width: 100%; */
+}
+.project > div:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.details {
+    /* border: 1px solid blue; */
+    /* width: 70%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    padding: 0 2rem 2rem 2rem;
+}
+.project img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.project img:hover {
+    /* width: 100vw;
+    height: 100vh; */
+    /* transform: scale(1.1);
+    transition: all 0.5s ease-in-out; */
+}
+.details h1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+.details h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.details h3 {
+    /* border: 1px solid red; */
+    font-size: 20px;
+    font-weight: 300;
+}
+.details h3 span {
+    color: #6a6a6a;
+}
+.details p {
+    color: #6b6a6a;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 60px;
 }
 
-.links {
+
+.projects_links {
+    /* border: 1px solid green; */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    /* top: 80%; */
+    bottom: 5%;
+    /* padding: 0 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.links i {
+.projects_links > div {
+    /* border: 1px solid red; */
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects_links i {
     font-size: 40px;
     color: #6b6a6a;
 }
-.links button {
+.projects_links i:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+.projects_links button {
     background-color: #6b6a6a;
     color: #fff;
     border: none;
     font-size: 20px;
-    border-radius: 2px;
-    padding: 10px 20px;
+    border-radius: 5px;
+    padding: 10px 30px;
     /* margin-top: 20px; */
     cursor: pointer;
+}
+
+.projects_links button:hover {
+    animation: rotate 0.6s ease-in-out both;
 }

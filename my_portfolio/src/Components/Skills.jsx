@@ -31,24 +31,27 @@ export const Skills = () => {
   ]
   return (
     <div id='skills' className='skills' style={theme?{backgroundColor: "black", color: "#fff"}: {backgroundColor: "#fff"}}>
-      <div>
-        <h1><span className='capitalS'>S</span>kills</h1>
-      </div>
-      <div className='images_div'>
-        {
-          images.map(el => (
-            <div className='imageDiv' key={el.id}>
-              {el.image.map((e) => (
-                <div className='flip_card'>
-                  <div className='flip_card_inner'>
-                    <div className='front_face'><img className={`bounce${count++}`} src={process.env.PUBLIC_URL+`${e.src}`} alt="" /></div>
-                    <div className='back_face'><p>{e.name}</p></div>
+      <div className='wrapper'>
+        <div className='snow'></div>
+        <div>
+          <h1><span className='capitalS'>S</span>kills</h1>
+        </div>
+        <div className='images_div'>
+          {
+            images.map(el => (
+              <div className='imageDiv' key={el.id}>
+                {el.image.map((e) => (
+                  <div key={e.name} className='flip_card'>
+                    <div className='flip_card_inner'>
+                      <div className='front_face'><img className={`bounce${count++}`} src={process.env.PUBLIC_URL+`${e.src}`} alt="" /></div>
+                      <div className='back_face'><p>{e.name}</p></div>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          ))
-        }
+                ))}
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   )

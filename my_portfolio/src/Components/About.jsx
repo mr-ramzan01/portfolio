@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from '../Context/ThemeContext'
 import '../styles/About.modules.css'
+import Typewriter from 'typewriter-effect'
 
 export const About = () => {
   const {theme} = useContext(ThemeContext);
@@ -21,17 +22,17 @@ export const About = () => {
       <div>
         <div className='about_firstChild'>
           <h1>Hi, <span><img src="/Images/hi_robot.gif" alt="" /></span> Myself Ramzan</h1>
-          <div className='animate_txt'>
-            <div className='wrapper'>
-              <div className="static_txt">I'm a</div>
-              <ul className='dynamic_txt'>
-                <li><span>Developer</span></li>
-                <li><span>Designer</span></li>
-              </ul>
-            </div>
+          <div className="animate_type">
+            <div>I'm a</div>
+            <Typewriter options={{
+              autoStart: true,
+              loop: true,
+              delay: 100,
+              deleteSpeed: 100,
+              strings: ["Developer", "Designer"]
+            }}/>
           </div>
-          {/* <h2>I'm a Full Stack Developer</h2> */}
-          <p>Strong in design with intuitive problem-solving skills. A passionate Full Stack Developer , skilled in MERN technologies and always eager to learn new skills.  Looking to start the career as an entry-level software engineer with a reputed firm to grow and show skills.</p>
+          <p>Strong in design with intuitive problem-solving skills. A passionate Full Stack Developer , skilled in MERN technologies and always eager to learn new skills.  Always looking to collaborate in projects to grow and show skills.</p>
           <div className='download'>
             <div>
               <a href="https://www.linkedin.com/in/ramzan01/" target={"_blank"}><i className="fa-brands fa-linkedin"></i></a>
@@ -45,7 +46,9 @@ export const About = () => {
           </div>
         </div>
         <div className='profile'>
-          <div><img src={process.env.PUBLIC_URL+`/Images/portfolioProfile.png`} alt="profile" /></div>
+          <div>
+            <img src={process.env.PUBLIC_URL+`/Images/portfolioProfile.png`} alt="profile" />
+          </div>
         </div>
       </div>
     </div>
