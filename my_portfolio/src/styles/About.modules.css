@@ -76,17 +76,18 @@
 
 .resume button {
     background-color: #6b6a6a;
+    font-family: 'Patrick Hand', cursive;
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 12px 35px;
+    padding: 8px 30px;
     margin-top: 20px;
     cursor: pointer;
+    font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* transform: rotate(-8deg); */
 }
 .resume button:hover {
-    transform: rotate(0deg);
     animation: rotate 0.6s ease-in-out both;
 }
 

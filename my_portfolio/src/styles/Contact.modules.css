@@ -2,6 +2,7 @@
     /* border: 1px solid red; */
     background-color: #eee;
     padding: 30px 0 60px 0;
+    font-family: 'Patrick Hand', cursive;
 }
 .contactHeading h1 {
     text-align: center;
@@ -9,48 +10,125 @@
     font-weight: 300;
 }
 .contactDiv > div {
+    /* border: 1px solid blue; */
     width: 80%;
     margin: auto;
 }
-.contactForm {
+.formDiv {
     background-color: #fff;
     border-radius: 10px;
+}
+
+.formDiv > div {
+    /* border: 1px solid green; */
+    display: flex;
+}
+.contactForm {
+    /* border: 1px solid orange; */
+    width: 100%;
+    border-radius: 0 10px 10px 0;
     padding: 30px 20px;
+}
+.contact_details {
+    /* border: 1px solid yellow; */
+    width: 100%;
+}
+.my_details {
+    /* border: 1px solid red; */
+}
+.contact_details h2 {
+    /* border: 1px solid blue; */
+    text-align: center;
+    margin: 0;
+    /* text-decoration: underline; */
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 100;
+}
+.my_details > div {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 60%;
+    margin: 30px auto 50px auto;
+}
+.contact_icon_div {
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    display: grid;
+    place-content: center;
+}
+.contact_icon_div i {
+    /* border: 1px solid magenta; */
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a6a6a;
+}
+.contact_text_div {
+    /* border: 1px solid blue; */
+    margin-left: 20px;
+    /* width: 100%; */
+}
+.contact_text_div a {
+    text-decoration: none;
+    color: #000000;
+}
+.contact_text_div h6 {
+    /* border: 1px solid magenta; */
+    margin: 0;
+    font-size: 20px;
+}
+.contact_text_div a p {
+    /* border: 1px solid gray; */
+    margin: 0;
+    font-size: 18px;
 }
 .contactDiv label {
     font-size: 20px;
 }
 .contactForm input {
-    width: 50%;
+    width: 90%;
     margin: 10px 0;
     height: 30px;
     padding: 0 10px;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Patrick Hand', cursive;
 }
 .contactForm input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 .contactForm textarea {
-    width: 50%;
+    width: 90%;
+    font-family: 'Patrick Hand', cursive;
     margin-top: 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     outline: none;
 }
 .submit {
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
+    font-family: 'Patrick Hand', cursive;
     font-size: 20px;
+    margin: auto;
     margin-top: 50px;
-    width: 20%;
+    display: block;
+    /* width: 20%; */
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #6b6a6a;
     color: #fff;
-    padding: 10px 20px;
-    margin-left: 15%;
+    padding: 8px 40px;
+    /* margin-left: 15%; */
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.submit:hover {
+    animation: rotate 0.6s ease-in-out both;
 }
 
 .capitalC {

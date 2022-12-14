@@ -33,6 +33,12 @@ export const Skills = () => {
     <div id='skills' className='skills' style={theme?{backgroundColor: "black", color: "#fff"}: {backgroundColor: "#fff"}}>
       <div className='wrapper'>
         <div className='snow'></div>
+        <div className='skills_right_gif'>
+          <img src="https://3.bp.blogspot.com/-CNLw1PljL5M/XQEKoCJSrHI/AAAAAAAzNVg/-L7qSIvpXeoY5fk3i6n_ffhkcCF0wbYWQCLcBGAs/s1600/AW3905295_19.gif" alt="" />
+        </div>
+        <div className='skills_left_gif'>
+          <img src="https://3.bp.blogspot.com/-CNLw1PljL5M/XQEKoCJSrHI/AAAAAAAzNVg/-L7qSIvpXeoY5fk3i6n_ffhkcCF0wbYWQCLcBGAs/s1600/AW3905295_19.gif" alt="" />
+        </div>
         <div>
           <h1><span className='capitalS'>S</span>kills</h1>
         </div>

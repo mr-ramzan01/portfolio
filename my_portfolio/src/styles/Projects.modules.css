@@ -159,11 +159,13 @@
 }
 .projects_links button {
     background-color: #6b6a6a;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: #fff;
     border: none;
     font-size: 20px;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 8px 30px;
+    font-family: 'Patrick Hand', cursive;
     /* margin-top: 20px; */
     cursor: pointer;
 }
