@@ -20,8 +20,8 @@ export const About = () => {
   return (
     <div id='about' className='about' style={theme? styles.dark: styles.default}>
       <div>
-        <div className='about_firstChild'>
-          <h1>Hi, <span><img src="/Images/hi_robot.gif" alt="" /></span> Myself Ramzan</h1>
+        <div data-aos="fade-right"  data-aos-duration="2000" data-aos-delay='500' className='about_firstChild'>
+          <h1>Hi, <span><img src="/Images/hi_robot.gif" alt="" /></span> I'm Ramzan</h1>
           <div className="animate_type">
             <div>I'm a</div>
             <Typewriter options={{
@@ -45,7 +45,7 @@ export const About = () => {
             </div>
           </div>
         </div>
-        <div className='profile'>
+        <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay='500' className='profile'>
           <div>
             <img src={process.env.PUBLIC_URL+`/Images/portfolioProfile.png`} alt="profile" />
           </div>

@@ -6,6 +6,7 @@ import { GithubStats } from './Components/GithubStats';
 import { Navbar } from './Components/Navbar';
 import { Projects } from './Components/Projects';
 import { Skills } from './Components/Skills';
+import { Sound } from './Components/Sound';
 import { ThemeContext } from './Context/ThemeContext';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
   }
   return (
     <div className="App">
-      <div className='scrollTop' style={theme?{backgroundColor: '#6a6a6a'}:{backgroundColor: '#000000'}} onClick={scrollToTop}>
+      <div className='scrollTop' style={theme?{backgroundColor: '#6a6a6a'}:{backgroundColor: '#1e272e'}} onClick={scrollToTop}>
       <span className="material-symbols-outlined">expand_less</span>
       </div>
       <Navbar/>

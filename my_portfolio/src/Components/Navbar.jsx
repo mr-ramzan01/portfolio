@@ -1,6 +1,11 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../Context/ThemeContext'
 import '../styles/Navbar.modules.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Sound } from './Sound';
+AOS.init();
+
 export const Navbar = () => {
 
   const {theme, handleTheme} = useContext(ThemeContext);
@@ -20,6 +25,7 @@ export const Navbar = () => {
       <div>
         <div><div className='logo'><h2>Ramzan Khan</h2><h2 style={theme?{color: 'rgb(100, 100, 100)'}: {color: '#0033ff'}}>Ramzan Khan</h2></div></div>
           <div className='navbox'>
+            <div><Sound/></div>
             <h4><a className='link' href="#about" style={theme? styles.dark: styles.default}>About</a></h4>
             <h4><a className='link' href="#skills" style={theme? styles.dark: styles.default}>Skills</a></h4>
             <h4><a className='link' href="#projects" style={theme? styles.dark: styles.default}>Projects</a></h4>

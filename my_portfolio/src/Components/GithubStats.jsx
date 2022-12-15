@@ -15,11 +15,11 @@ export const GithubStats = () => {
           <h1><span className='capitalG'>G</span>ithub Stats</h1>
         </div>
         <div className='streak'>
-          {theme?<img src="https://github-readme-stats.vercel.app/api?username=mr-ramzan01&show_icons=true&locale=en&theme=radical&border_radius=10" alt="" />:<img src="https://github-readme-stats.vercel.app/api?username=mr-ramzan01&show_icons=true&locale=en&border_radius=10" alt="" />}
-          {theme?<img src="https://github-readme-streak-stats.herokuapp.com/?user=mr-ramzan01&theme=radical&border_radius=10" alt="" />:<img src="https://github-readme-streak-stats.herokuapp.com/?user=mr-ramzan01&border_radius=10" alt="" />}
+          <div data-aos="fade-right" data-aos-delay='800' data-aos-duration='1000'>{theme?<img  src="https://github-readme-stats.vercel.app/api?username=mr-ramzan01&show_icons=true&locale=en&theme=radical&border_radius=10" alt="" />:<img src="https://github-readme-stats.vercel.app/api?username=mr-ramzan01&show_icons=true&locale=en&border_radius=10" alt="" />}</div>
+          <div data-aos="fade-left" data-aos-delay='800' data-aos-duration='1000'>{theme?<img src="https://github-readme-streak-stats.herokuapp.com/?user=mr-ramzan01&theme=radical&border_radius=10" alt="" />:<img src="https://github-readme-streak-stats.herokuapp.com/?user=mr-ramzan01&border_radius=10" alt="" />}</div>
         </div>
         <div className='language'>
-          <div>{theme?<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-ramzan01&layout=compact&theme=radical&border_radius=10" alt="" />:<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-ramzan01&layout=compact&border_radius=10" alt="" />}</div>
+          <div data-aos="zoom-in-up" data-aos-delay='800' data-aos-duration='1000'>{theme?<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-ramzan01&layout=compact&theme=radical&border_radius=10" alt="" />:<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-ramzan01&layout=compact&border_radius=10" alt="" />}</div>
         </div>
       </div>
     </div>

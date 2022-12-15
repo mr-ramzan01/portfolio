@@ -30,9 +30,6 @@
     align-items: center;
     justify-content: center;
 }
-.language > div {
-    z-index: 8;
-}
 
 .capitalG {
     font-size: 60px;

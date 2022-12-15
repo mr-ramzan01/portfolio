@@ -33,21 +33,15 @@ export const Skills = () => {
     <div id='skills' className='skills' style={theme?{backgroundColor: "black", color: "#fff"}: {backgroundColor: "#fff"}}>
       <div className='wrapper'>
         <div className='snow'></div>
-        <div className='skills_right_gif'>
-          <img src="https://3.bp.blogspot.com/-CNLw1PljL5M/XQEKoCJSrHI/AAAAAAAzNVg/-L7qSIvpXeoY5fk3i6n_ffhkcCF0wbYWQCLcBGAs/s1600/AW3905295_19.gif" alt="" />
-        </div>
-        <div className='skills_left_gif'>
-          <img src="https://3.bp.blogspot.com/-CNLw1PljL5M/XQEKoCJSrHI/AAAAAAAzNVg/-L7qSIvpXeoY5fk3i6n_ffhkcCF0wbYWQCLcBGAs/s1600/AW3905295_19.gif" alt="" />
-        </div>
         <div>
           <h1><span className='capitalS'>S</span>kills</h1>
         </div>
-        <div className='images_div'>
+        <div  className='images_div'>
           {
             images.map(el => (
               <div className='imageDiv' key={el.id}>
                 {el.image.map((e) => (
-                  <div key={e.name} className='flip_card'>
+                  <div key={e.name} data-aos="fade-up" data-aos-delay='200' data-aos-duration='1000' className='flip_card'>
                     <div className='flip_card_inner'>
                       <div className='front_face'><img className={`bounce${count++}`} src={process.env.PUBLIC_URL+`${e.src}`} alt="" /></div>
                       <div className='back_face'><p>{e.name}</p></div>

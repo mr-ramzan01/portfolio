@@ -3,8 +3,8 @@
   z-index: 100;
   width: 40px;
   height: 40px;
-  right: 2vw;
-  top: 88vh;
+  right: 28px;
+  bottom: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,4 +17,20 @@
   color: #fff
 }
 
-
+.audio_div {
+  /* border: 1px solid red; */
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+}
+.audio_div audio {
+  /* border: 2px solid blue; */
+  display: none;
+}
+.audio_div i {
+  /* border: 1px solid black; */
+  color: #1e272e;
+  cursor: pointer;
+  font-size: 25px;
+}
