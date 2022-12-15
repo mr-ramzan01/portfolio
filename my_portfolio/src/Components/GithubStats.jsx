@@ -8,9 +8,9 @@ export const GithubStats = () => {
   return (
     <>
     <div  id='stats'></div>
-    <div className='githubStats' style={theme?{backgroundColor:"black", color: "#fff"}:{backgroundColor:"#fff"}}>
+    <div className='githubStats' style={theme?{background: 'rgb(30,39,46)', background: 'linear-gradient(0deg, rgba(30,39,46,1) 20%, rgba(0,153,255,1) 100%)', color: "#fff"}:{background: 'rgb(255,255,255)', background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,153,255,1) 100%)'}}>
       <div className='wrapper'>
-        <div className='snow'></div>
+        {theme && <div className='snow'></div>}
         <div>
           <h1><span className='capitalG'>G</span>ithub Stats</h1>
         </div>

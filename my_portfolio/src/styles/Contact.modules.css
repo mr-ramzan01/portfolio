@@ -1,7 +1,7 @@
 .contactDiv {
     /* border: 1px solid red; */
     background-color: #eee;
-    padding: 30px 0 60px 0;
+    padding: -20px 0 -10px 0;
     font-family: 'Patrick Hand', cursive;
 }
 .contactHeading h1 {
@@ -9,15 +9,15 @@
     font-size: 40px;
     font-weight: 300;
 }
-.contactDiv > div {
-    /* border: 1px solid blue; */
-    width: 80%;
-    margin: auto;
-}
+
 .formDiv {
     background-color: #fff;
+    position: relative;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 5;
+    width: 80%;
+    margin: auto;
 }
 
 .formDiv > div {
@@ -92,8 +92,10 @@
 }
 .contactForm input {
     width: 90%;
+    border: 1px solid #000000;
+    border-radius: 3px;
     margin: 10px 0;
-    height: 30px;
+    height: 35px;
     padding: 0 10px;
     outline: none;
     font-size: 18px;
@@ -105,6 +107,8 @@
 }
 .contactForm textarea {
     width: 90%;
+    border: 1px solid #000000;
+    border-radius: 3px;
     font-family: 'Patrick Hand', cursive;
     margin-top: 10px;
     padding: 10px;

@@ -16,21 +16,22 @@
 .snow,.snow::after,.snow::before {
     content: "";
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
     bottom: -650px;
-    background-image: radial-gradient(4px 4px at 100px 50px, #6a6a6a, transparent),
-    radial-gradient(6px 6px at 200px 150px, #6a6a6a, transparent),
-    radial-gradient(3px 3px at 300px 250px, #6a6a6a, transparent),
-    radial-gradient(4px 4px at 400px 350px, #6a6a6a, transparent),
-    radial-gradient(3px 3px at 500px 100px, #6a6a6a, transparent),
-    radial-gradient(4px 6px at 50px 200px, #6a6a6a, transparent),
-    radial-gradient(6px 6px at 150px 300px, #6a6a6a, transparent),
-    radial-gradient(3px 3px at 250px 400px, #6a6a6a, transparent),
-    radial-gradient(4px 4px at 300px 500px, #6a6a6a, transparent),
-    radial-gradient(6px 6px at 50px 200px, #6a6a6a, transparent),
-    radial-gradient(3px 3px at 300px 250px, #6a6a6a, transparent);
+    background-image: radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+    radial-gradient(3px 3px at 500px 100px, #fff, transparent),
+    radial-gradient(4px 6px at 50px 200px, #fff, transparent),
+    radial-gradient(6px 6px at 150px 300px, #fff, transparent),
+    radial-gradient(3px 3px at 250px 400px, #fff, transparent),
+    radial-gradient(4px 4px at 300px 500px, #fff, transparent),
+    radial-gradient(6px 6px at 50px 200px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff, transparent);
     background-size: 650px 650px;
     animation: snowAnimation 8s linear infinite;
 }
@@ -43,6 +44,43 @@
 
 }
 .snow::before {
+    margin-left: -350px;
+    opacity: 0.8;
+    filter: blur(1px);
+    animation-delay: reverse;
+    animation-duration: 9s;
+}
+.snow_dark,.snow_dark::after,.snow_dark::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -650px;
+    background-image: radial-gradient(4px 4px at 100px 50px, #5a5a5a, transparent),
+    radial-gradient(6px 6px at 200px 150px, #5a5a5a, transparent),
+    radial-gradient(3px 3px at 300px 250px, #5a5a5a, transparent),
+    radial-gradient(4px 4px at 400px 350px, #5a5a5a, transparent),
+    radial-gradient(3px 3px at 500px 100px, #5a5a5a, transparent),
+    radial-gradient(4px 6px at 50px 200px, #5a5a5a, transparent),
+    radial-gradient(6px 6px at 150px 300px, #5a5a5a, transparent),
+    radial-gradient(3px 3px at 250px 400px, #5a5a5a, transparent),
+    radial-gradient(4px 4px at 300px 500px, #5a5a5a, transparent),
+    radial-gradient(6px 6px at 50px 200px, #5a5a5a, transparent),
+    radial-gradient(3px 3px at 300px 250px, #5a5a5a, transparent);
+    background-size: 650px 650px;
+    animation: snowAnimation 8s linear infinite;
+}
+.snow_dark::after {
+    margin-left: -250px;
+    opacity: 0.7;
+    filter: blur(2px);
+    animation-delay: reverse;
+    animation-duration: 6s;
+
+}
+.snow_dark::before {
     margin-left: -350px;
     opacity: 0.8;
     filter: blur(1px);
@@ -142,7 +180,7 @@
 .flip_card {
     background-color: transparent;
     width: 100px;
-    
+    z-index: 5;
     height: 100px;
     perspective: 1000px;
 }

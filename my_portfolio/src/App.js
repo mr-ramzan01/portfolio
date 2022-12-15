@@ -24,7 +24,7 @@ function App() {
   }
   return (
     <div className="App">
-      <div className='scrollTop' style={theme?{backgroundColor: '#6a6a6a'}:{backgroundColor: '#1e272e'}} onClick={scrollToTop}>
+      <div className='scrollTop' style={theme?{backgroundColor: '#000000'}:{backgroundColor: '#4a4a4a'}} onClick={scrollToTop}>
       <span className="material-symbols-outlined">expand_less</span>
       </div>
       <Navbar/>

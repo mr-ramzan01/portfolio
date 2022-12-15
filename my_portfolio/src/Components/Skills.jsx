@@ -30,9 +30,9 @@ export const Skills = () => {
     }
   ]
   return (
-    <div id='skills' className='skills' style={theme?{backgroundColor: "black", color: "#fff"}: {backgroundColor: "#fff"}}>
+    <div id='skills' className='skills' style={theme?{background: 'rgb(44,58,71)', background: 'linear-gradient(0deg, rgba(44,58,71,1) 0%, rgba(30,39,46,1) 40%)', color: "#fff"}: {backgroundColor: "#fff"}}>
       <div className='wrapper'>
-        <div className='snow'></div>
+        {theme?<div className='snow'></div>:<div className='snow_dark'></div>}
         <div>
           <h1><span className='capitalS'>S</span>kills</h1>
         </div>
@@ -43,8 +43,8 @@ export const Skills = () => {
                 {el.image.map((e) => (
                   <div key={e.name} data-aos="fade-up" data-aos-delay='200' data-aos-duration='1000' className='flip_card'>
                     <div className='flip_card_inner'>
-                      <div className='front_face'><img className={`bounce${count++}`} src={process.env.PUBLIC_URL+`${e.src}`} alt="" /></div>
-                      <div className='back_face'><p>{e.name}</p></div>
+                      <div style={theme?{background: '#2c3a47', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}:{backgroundColor: '#eee'}} className='front_face'><img className={`bounce${count++}`} src={process.env.PUBLIC_URL+`${e.src}`} alt="" /></div>
+                      <div style={theme?{background: '#2c3a47'}:{backgroundColor: '#eee'}} className='back_face'><p style={theme?{color: '#fff'}:{color: '#000000'}}>{e.name}</p></div>
                     </div>
                   </div>
                 ))}
