@@ -30,7 +30,7 @@ export const Skills = () => {
     }
   ]
   return (
-    <div id='skills' className='skills' style={theme?{background: 'rgb(44,58,71)', background: 'linear-gradient(0deg, rgba(44,58,71,1) 0%, rgba(30,39,46,1) 40%)', color: "#fff"}: {backgroundColor: "#fff"}}>
+    <div id='skills' className='skills' style={theme?{background: 'rgb(44,58,71)', background: 'linear-gradient(0deg, rgba(44,58,71,1) 0%, rgba(30,39,46,1) 40%)', color: "#fff"}: {background: 'rgb(238,238,238)', background: 'linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 31%)'}}>
       <div className='wrapper'>
         {theme?<div className='snow'></div>:<div className='snow_dark'></div>}
         <div>

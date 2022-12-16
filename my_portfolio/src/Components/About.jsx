@@ -6,19 +6,9 @@ import Typewriter from 'typewriter-effect'
 
 export const About = () => {
   const {theme} = useContext(ThemeContext);
-  const styles = {
-    default: {
-      color: "black",
-      backgroundColor: "#eee"
-    },
-    dark: {
-      color: "white",
-      // backgroundColor: "#2c3a47"
-    }
-  }
 
   return (
-    <div id='about' className='about' style={theme? {color: '#fff', background: 'rgb(30,39,46)', background: 'linear-gradient(0deg, rgba(30,39,46,1) 0%, rgba(44,58,71,1) 100%)'}: {color: '#000000', background: '#eee'}}>
+    <div id='about' className='about' style={theme? {color: '#fff', background: 'rgb(30,39,46)', background: 'linear-gradient(0deg, rgba(30,39,46,1) 0%, rgba(44,58,71,1) 100%)'}: {color: '#000000', background: 'rgb(255,255,255)', background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%)'}}>
       <div className='wrapper'>
         {theme && <div className='snow'></div>}
         <div className='about_div'>
@@ -39,13 +29,13 @@ export const About = () => {
             <p>Strong in design with intuitive problem-solving skills. A passionate Full Stack Developer , skilled in MERN technologies and always eager to learn new skills.  Always looking to collaborate in projects to grow and show skills.</p>
             <div className='download'>
               <div>
-                <a href="https://www.linkedin.com/in/ramzan01/" target={"_blank"}><i style={theme?{color: '#2f4356',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '50%'}:{color: '#6a6a6a'}} className="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/mr-ramzan01" target={"_blank"}><i style={theme?{color: '#2f4356',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '50%'}:{color: '#6a6a6a'}} className="fa-brands fa-github" ></i></a>
-                <a href="mailto: ramzanformasai03@gmail.com"><i style={theme?{color: '#2f4356',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '50%'}:{color: '#6a6a6a'}} className="fa-solid fa-envelope"></i></a>
-                <a href="tel: 9958949641"><i style={theme?{color: '#2f4356',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '50%'}:{color: '#6a6a6a'}} className="fa-solid fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/ramzan01/" target={"_blank"}><i style={theme?{color: '#0173c0'}:{color: '#6a6a6a'}} className="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/mr-ramzan01" target={"_blank"}><i style={theme?{color: '#0173c0'}:{color: '#6a6a6a'}} className="fa-brands fa-github" ></i></a>
+                <a href="mailto: ramzanformasai03@gmail.com"><i style={theme?{color: '#0173c0'}:{color: '#6a6a6a'}} className="fa-solid fa-envelope"></i></a>
+                <a href="tel: 9958949641"><i style={theme?{color: '#0173c0'}:{color: '#6a6a6a'}} className="fa-solid fa-phone"></i></a>
               </div>
               <div className='resume'>
-                <a href="https://drive.google.com/file/d/1TLn9o7L3Lt-CHDUcaPUpIA6K6cosBXhE/view?usp=share_link" target={"_blank"}><button style={theme?{backgroundColor: '#2f4356'}:{backgroundColor: '#6a6a6a'}}>Resume <i className="fa-solid fa-eye"></i></button></a>
+                <a href="https://drive.google.com/file/d/1TLn9o7L3Lt-CHDUcaPUpIA6K6cosBXhE/view?usp=share_link" target={"_blank"}><button style={theme?{backgroundColor: '#0173c0'}:{backgroundColor: '#6a6a6a'}}>Resume <i className="fa-solid fa-eye"></i></button></a>
               </div>
             </div>
           </div>
