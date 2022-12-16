@@ -37,6 +37,21 @@ export const Navbar = () => {
               }
             </div>
           </div>
+          <div className='menu'>
+            <div className='menu_sound'>
+              <Sound/>
+            </div>
+            <div className='menu_theme' onClick={handleTheme}>
+              {
+                theme ? <span className="material-symbols-outlined" style={{color: "#fff"}}>light_mode</span> : <span className="material-symbols-outlined">dark_mode</span>
+              }
+            </div>
+            <div className='menu_div'>
+              <div style={theme?{backgroundColor: '#fff'}:{backgroundColor: '#1e272e'}}></div>
+              <div style={theme?{backgroundColor: '#fff'}:{backgroundColor: '#1e272e'}}></div>
+              <div style={theme?{backgroundColor: '#fff'}:{backgroundColor: '#1e272e'}}></div>
+            </div>
+          </div>
       </div>
     </div>
     

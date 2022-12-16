@@ -5,7 +5,25 @@ import '../styles/Skills.modules.css'
 
 export const Skills = () => {
   let count = 1;
+  let count2 = 1;
   const {theme} = useContext(ThemeContext);
+  let smallScreenImages = [
+    { id: 0, name: 'HTML', src:'/Images/html.svg'},
+    { id: 1, name: 'CSS', src: 'Images/css.svg'},
+    { id: 2, name: 'JAVASCRIPT', src: 'Images/javaScript.svg'},
+    { id: 3, name: 'JAVA', src: 'Images/java.png'},
+    { id: 4, name: 'REACT', src: 'Images/react.svg'},
+    { id: 5, name: 'REDUX', src: 'Images/redux.svg'},
+    { id: 6, name: 'NODEJS', src: 'Images/nodeJs.svg'},
+    { id: 7, name: 'EXPRESS', src: 'Images/express.svg'},
+    { id: 8, name: 'MONGODB', src: 'Images/mongoDB.svg'},
+    { id: 9, name: 'MONGOOSE', src: 'Images/mongoose.png'},
+    { id: 10, name: 'CHAKRA UI', src: 'Images/chakra.png'},
+    { id: 11, name: 'NPM', src: 'Images/npm.svg'},
+    { id: 12, name: 'GIT', src: 'Images/git.svg'},
+    { id: 13, name: 'HEROKU', src: 'Images/heroku.png'},
+    { id: 14, name: 'NETLIFY', src: 'Images/netlify.png'},
+  ]
   let images = [
     {
       id: 1,
@@ -48,6 +66,18 @@ export const Skills = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+            ))
+          }
+          {
+            smallScreenImages.map(e => (
+              <div className='imageDiv2' key={e.id}>
+                <div data-aos="fade-up" data-aos-delay='200' data-aos-duration='1000' className='flip_card'>
+                    <div className='flip_card_inner'>
+                      <div style={theme?{background: '#2c3a47', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}:{backgroundColor: '#eee'}} className='front_face'><img className={`bounce${count2++}`} src={process.env.PUBLIC_URL+`${e.src}`} alt="" /></div>
+                      <div style={theme?{background: '#2c3a47'}:{backgroundColor: '#eee'}} className='back_face'><p style={theme?{color: '#fff'}:{color: '#000000'}}>{e.name}</p></div>
+                    </div>
+                  </div>
               </div>
             ))
           }

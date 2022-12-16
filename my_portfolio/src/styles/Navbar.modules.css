@@ -22,6 +22,7 @@ html {
     display: grid;
     place-content: center;
 }
+
 .logo h2{
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
@@ -67,9 +68,10 @@ html {
     );
 }
 }
-.navbar >div> div:nth-child(2) {
+.navbox {
+    /* border: 1px solid green; */
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: space-between;
     align-items: center;
 }
@@ -102,3 +104,55 @@ html {
 }
 
 
+.menu {
+    /* border: 1px solid orange; */
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_div {
+    /* border: 1px solid blue; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.menu_sound, .menu_theme {
+    /* border: 1px solid blue; */
+    display: grid;
+    place-content: center;
+}
+.menu > div {
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid green; */
+}
+.menu_div > div {
+    width: 30px;
+    height: 3px;
+    background-color: red;
+    margin-bottom: 5px;
+    
+}
+
+
+@media screen and (min-width: 881px) {
+    
+    .navbar {
+        /* border: 1px solid red; */
+    }
+    .menu {
+        display: none;
+    }
+}
+@media screen and (min-width: 0) and (max-width: 880px) {
+    .navbar > div {
+        padding: 0 20px;
+    }
+    .navbox {
+        /* border: 1px solid red; */
+        /* border: 1px solid blue; */
+        display: none;
+        /* visibility: hidden; */
+    }
+}

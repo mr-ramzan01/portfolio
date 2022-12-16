@@ -116,6 +116,7 @@
     justify-content: center;
     gap: 50px;
 }
+
 /* .imageDiv > div {
     background-color: #eee;
     border-radius: 10px;
@@ -123,21 +124,21 @@
     text-align: center;
 } */
 
-.imageDiv img {
+.imageDiv img , .imageDiv2 img {
     /* border: 1px solid red; */
     width: 70px;
     height: 70px;
    
 }
-.imageDiv img:hover {
-    animation: none;
+/* .imageDiv img:hover {
+    animation: none; */
     /* transform: rotateY(90deg); */
-}
+/* } */
 
 .bounce1, .bounce5, .bounce8, .bounce15 {
     animation: float_skills 0.8s ease-in infinite;
 }
-.bounce2, .bounce6, .bounce9, .bounce12 {
+.bounce2, .bounce6, .bounce9, .bounce12, .bounce16 {
     animation: float_skills 0.8s ease-in infinite;
     animation-delay: 1s;
 }
@@ -224,22 +225,68 @@
     transform: rotateY(180deg);
 }
 
-.skills_right_gif {
-    /* border: 1px solid red; */
-    width: 320px;
-    height: 300px;
-    position: absolute;
-    right: -104px;
-    /* left: 81.9vw; */
+
+
+@media screen and (min-width: 881px) and (max-width: 989px) {
+    .images_div {
+        width: 80%;
+    }
+
 }
-.skills_left_gif {
-    /* border: 1px solid red; */
-    width: 320px;
-    height: 300px;
-    position: absolute;
-    transform: rotateY(180deg);
-    left: -104px;
+@media screen and (min-width: 0px) and (max-width: 880px) {
+    .images_div {
+        width: 80%;
+    }
+    .flip_card {
+        width: 80px;
+        height: 80px;
+    }
+    .images_div img {
+        width: 60px;
+        height: 60px;
+    }
 }
-.skills_right_gif img {
-    /* border: 1px solid blue; */
+
+@media screen and (min-width: 0px) and (max-width: 876px) {
+    .back_face p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 671px) {
+    .imageDiv2 {
+        display: none;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {
+    .images_div {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 670px) {
+    .imageDiv {
+        display: none;
+    }
+    .images_div {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 20px
+    }
+    .imageDiv2 {
+        /* border: 1px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .images_div {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 455px) {
+    .images_div {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
