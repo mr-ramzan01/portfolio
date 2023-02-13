@@ -13,6 +13,27 @@ export const Projects = () => {
           <h1 className='project_heading'><span className='capitalP'>P</span>rojects</h1>
         </div>
         <div className='projects_div'>
+        <div data-aos="zoom-in" data-aos-delay='200' data-aos-duration='1000' className='project project2'>
+            <div>
+              <div className='projects_image_div'>
+                <img src={process.env.PUBLIC_URL+"/Images/ocialmedia.jpg"} alt="" />
+              </div>
+              <div className='details'>
+                <div>
+                  <h1>Ocial Media</h1>
+                  <h2>Ocial Media is a full stack social platform where users can interact through post, messages, stories etc. And can build their own community across the world.</h2>
+                  <h3>Tech Stacks: <span style={theme?{color: '#fff'}:{color: '#6a6a6a'}}>React.js | Express.js | Mongoose | Nodejs | MongoDB | MUI</span></h3>
+                  <p style={theme?{color: '#fff'}:{color: '#6a6a6a'}}>An Individual project executed within 50 days.</p>
+                </div>
+                <div className='projects_links'>
+                  <div>
+                    <a href="https://ocialmedia.netlify.app/" target="_blank"><button style={theme?{background: '#2f4356'}:{background: '#6a6a6a'}}>Live</button></a>
+                    <a href="https://github.com/mr-ramzan01/OcialMedia" target="_blank"><i style={theme?{color: '#2f4356',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '50%'}:{color: '#6a6a6a'}} className="fa-brands fa-github" ></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div data-aos="zoom-in" data-aos-delay='200' data-aos-duration='1000' className='project project1'>
             <div>
               <div className='projects_image_div'>
