@@ -45,6 +45,15 @@ export function Hero() {
             Get in touch
           </a>
         </div>
+
+        <a
+          href={profile.resumeUrl}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.cvLink}
+        >
+          View CV <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </SectionFrame>
   );

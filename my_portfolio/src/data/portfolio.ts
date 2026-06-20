@@ -12,7 +12,7 @@ export const profile = {
   githubHandle: 'mr-ramzan01',
   linkedin: 'https://www.linkedin.com/in/ramzan01/',
   linkedinHandle: 'ramzan01',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: 'https://drive.google.com/file/d/1TLn9o7L3Lt-CHDUcaPUpIA6K6cosBXhE/view?usp=share_link',
 } as const;
 
 export const summary =
@@ -85,7 +85,7 @@ export const projects: ProjectItem[] = [
       'Implemented an XP-based engagement system with points redeemable for ticket discounts, boosting user retention and repeat purchases.',
       'Integrated Razorpay and PayU for ticket payments; built end-to-end type-safe APIs with tRPC across event discovery and checkout flows.',
     ],
-    link: 'https://astrix.live',
+    link: 'https://www.astrix.live/',
     image: '/Images/astrix.png',
   },
   {
