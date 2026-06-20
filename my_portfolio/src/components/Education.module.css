@@ -61,5 +61,12 @@
 
 @media (max-width: 720px) {
   .head { grid-template-columns: 1fr; align-items: start; }
-  .grid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 600px) {
+  .title { font-size: 1.3rem; }
+  .institution { font-size: 0.92rem; }
+  .detail { font-size: 0.9rem; }
+  .kicker { font-size: 0.94rem; }
 }

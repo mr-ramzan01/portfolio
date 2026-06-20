@@ -2,6 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; background: #0a0a0a; }
+html, body { overflow-x: hidden; }
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 16px;
@@ -78,7 +79,7 @@ p { color: var(--ink-soft); }
   padding-inline: var(--gutter);
   display: flex;
   flex-direction: column;
-  gap: clamp(40px, 6vw, 72px);
+  gap: clamp(32px, 5vw, 72px);
   min-height: calc(100vh - 80px);
 }
 
@@ -88,19 +89,32 @@ p { color: var(--ink-soft); }
   justify-content: space-between;
   gap: 16px;
   font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
+  font-size: clamp(0.62rem, 1.4vw, 0.72rem);
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-muted);
 }
 .pageTop .label, .pageBottom .label { color: var(--ink-soft); }
 .pageTop .longArrow {
   height: 10px;
-  width: clamp(48px, 7vw, 96px);
-  margin-left: 24px;
+  width: clamp(40px, 6vw, 96px);
+  margin-left: 16px;
   color: var(--ink);
   overflow: visible;
   flex: none;
+}
+
+@media (max-width: 600px) {
+  :root { --gutter: 16px; }
+  .pageInner { min-height: auto; }
+  .page { padding-block: 28px; }
+  .pageTop { justify-content: center; }
+  .pageTop .longArrow { display: none; }
+  .pageBottom { flex-wrap: wrap; justify-content: center; gap: 6px 12px; text-align: center; }
+}
+
+@media (max-width: 360px) {
+  :root { --gutter: 12px; }
 }
 .pageBottom { margin-top: auto; }
 

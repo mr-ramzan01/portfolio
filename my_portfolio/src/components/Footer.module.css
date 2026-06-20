@@ -40,5 +40,11 @@
 .back { padding: 11px 18px; font-size: 0.88rem; }
 
 @media (max-width: 720px) {
-  .row { grid-template-columns: 1fr; }
+  .row { grid-template-columns: 1fr; gap: 28px; }
+}
+
+@media (max-width: 600px) {
+  .footer { padding-block: 40px; }
+  .mark { font-size: 1.8rem; }
+  .back { align-self: flex-start; }
 }

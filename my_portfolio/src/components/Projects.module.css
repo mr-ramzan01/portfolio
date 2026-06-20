@@ -166,3 +166,13 @@
   .card { grid-template-columns: 1fr; }
   .name { font-size: clamp(2rem, 12vw, 3.4rem); }
 }
+
+@media (max-width: 600px) {
+  .frame { aspect-ratio: 4 / 3; }
+  .subtitleText { font-size: 1.15rem; }
+  .bullets li { font-size: 0.92rem; padding-left: 18px; }
+  .bullets li::before { width: 8px; }
+  .tech li { font-size: 0.66rem; padding: 5px 10px; }
+  .idx { font-size: 0.62rem; padding: 5px 8px; }
+  .subtitle { gap: 6px; }
+}

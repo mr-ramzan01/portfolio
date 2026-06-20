@@ -48,3 +48,9 @@
   .head { grid-template-columns: 1fr; align-items: start; }
   .grid { grid-template-columns: 1fr; gap: 40px; }
 }
+
+@media (max-width: 600px) {
+  .pill { padding: 8px 13px; font-size: 0.84rem; }
+  .label { font-size: 0.72rem; letter-spacing: 0.16em; }
+  .kicker { font-size: 0.94rem; }
+}

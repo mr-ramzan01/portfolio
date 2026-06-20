@@ -62,7 +62,28 @@
 }
 .tocPill:hover .tocIdx { color: var(--bg); }
 
+/* Alternating fill: every 2nd item becomes a solid cream pill */
+.toc li:nth-child(even) .tocPill {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.toc li:nth-child(even) .tocPill .tocIdx { color: var(--accent-soft); }
+.toc li:nth-child(even) .tocPill:hover {
+  background: transparent;
+  color: var(--ink);
+}
+.toc li:nth-child(even) .tocPill:hover .tocIdx { color: var(--accent); }
+
 @media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; gap: 40px; }
+  .toc { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
   .toc { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .stats dd { font-size: 1.5rem; }
+  .lead { font-size: 0.94rem; }
+  .tocPill { padding: 14px 18px; font-size: 0.88rem; }
 }
